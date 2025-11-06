@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary mb-4" style="--bs-bg-opacity: .9;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'inicio_sistema' %}">
+            <i class="bi bi-gear-fill"></i> Sistema de Administración Preparatoria
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'inicio_sistema' %}"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profesorDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-video2"></i> Profesor
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="profesorDropdown">
+                        <li><a class="dropdown-item" href="{% url 'agregar_profesor' %}">Agregar Profesor</a></li>
+                        <li><a class="dropdown-item" href="{% url 'ver_profesor' %}">Ver Profesores</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="cursoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-book-fill"></i> Curso
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="cursoDropdown">
+                        <li><a class="dropdown-item" href="#">Agregar Curso</a></li>
+                        <li><a class="dropdown-item" href="#">Ver Cursos</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="estudianteDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-badge-fill"></i> Estudiante
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="estudianteDropdown">
+                        <li><a class="dropdown-item" href="#">Agregar Estudiante</a></li>
+                        <li><a class="dropdown-item" href="#">Ver Estudiantes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
